@@ -103,3 +103,5 @@ ENV/
 # SQLite
 *.sqlite3
 
+# Editor
+.*.swp
