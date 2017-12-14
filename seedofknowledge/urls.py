@@ -20,5 +20,5 @@ from core import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
-    path('register/', views.register, name='register'),
+    path('register/', views.RegisterView.as_view(), name='register'),
 ]
