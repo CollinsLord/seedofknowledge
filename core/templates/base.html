@@ -1,13 +1,17 @@
 <!doctype html>
 
+{% load bootstrap4 %}
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <title>{% block title %}Seed of Knowledge {% endblock %}</title>
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
     </head>
 
     <body>
-        {% block content %}
-        {% endblock %}
+        {% block navbar %}{% endblock %}
+        {% block content %}{% endblock %}
     </body>
 </html>
