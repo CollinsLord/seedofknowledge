@@ -26,5 +26,6 @@ urlpatterns = [
     path('logout/', auth_views.logout, name='logout'),
     path('dashboard/', views.dashboard, name='dashboard'),
 
+    path('subjects/', include('subjects.urls', namespace='subjects')),
     path('courses/', include('courses.urls', namespace='courses')),
 ]

@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'core.apps.CoreConfig',
+    'subjects.apps.SubjectsConfig',
     'courses.apps.CoursesConfig',
     'bootstrap4',
     'django.contrib.admin',

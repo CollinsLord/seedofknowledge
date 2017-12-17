@@ -1,0 +1,11 @@
+{% extends "base_authenticated.html" %}
+
+{% block content %}
+<h2>Course List</h2>
+
+<ul>
+    {% for subject in object_list %}
+    <li><a href="{% url 'subjects:subject-detail' subject.id %}">{{ subject }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
