@@ -6,4 +6,4 @@ class Course(models.Model):
     subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return self.subject.name
